@@ -1,0 +1,148 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* signup form */
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: lightgrey;
+    box-sizing: border-box;
+    /* margin-top: 20px; */
+  }
+
+  .login-form .login {
+    width: 700px;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+  }
+  .login-form .login .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  .login-form .login .right {
+    width: 100%;
+    background-image: url('../../images/login-back.png');
+    box-sizing: border-box;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 2px 2px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* css property in left section */
+  .login-form .login .left h1 {
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+  }
+  .login-form .login .left input {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+  }
+
+  .login-form .login .left input[type="submit"] {
+    margin-top: 28px;
+    width: 120px;
+    height: 32px;
+    background: #fdb11f;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+  }
+  .login-form .login .left input[type="submit"]:hover,
+  .login-form .login .left input[type="submit"]:focus {
+    opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+
+  .login-form .login .left input[type="submit"]:active {
+    opacity: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+  /* css property in left section */
+  /* css property in rigth section */
+  .login-form .login  .right .loginwith {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .login-form .login .right button.social-signin {
+    margin-bottom: 20px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+
+  .login-form .login .right button.social-signin:hover,
+  .login-form .login .right button.social-signin:focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
+  }
+
+  .login-form .login .right button.social-signin:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
+  }
+
+  .login-form .login .right button.social-signin.facebook {
+    background: #32508e;
+  }
+
+  .login-form .login .right button.social-signin.twitter {
+    background: #55acee;
+  }
+
+  .login-form .login .right button.social-signin.google {
+    background: #dd4b39;
+  }
+  /* css property in rigth section */
+
+
+  @media screen and (max-width:769px){
+      .login-form .login {
+          width: 90%;
+          display: flex;
+          flex-direction: column-reverse;
+        }
+  }
+/* signup from */
